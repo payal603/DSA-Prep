@@ -31,7 +31,7 @@ We compute `min` and `max` for every subtree to validate BST properties.
 
 - `max` is used when we have to validiate 8 root as bst and want to make sure there is no one grater than 8 on the left of 6 as in the left of 6 obviously everything will be less than 6 as 6 is valid bst and that's why we have reached here.
 
-- `min` is used when we have 6 as root and need to know everything is greater than 6 in right.
+- `min` is used when we have 6 as root and need to know everything is greater than 6 in right that is MIN IN THE RIGHT OF 6 IS ALSO GREATER THAN 6.
 -Both `min` and `max` values are calculated for every subtree because,
 at a given moment, we do not know whether the current node will act as
 a left child or a right child for its parent. 
