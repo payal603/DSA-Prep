@@ -57,6 +57,6 @@ Time: O(n)
 Space: O(h) (recursion stack)
 
 ## EXPLANATION
-1) Always first will be largest even when there is mid and last bcoz it has been swapped for last's place ,then last it at extreme right so it must be big only.
+1) Always first will be largest even when there is mid and last bcoz it has been swapped for last's place ,then last it at extreme right so it must be big only. This large value has come betwwen that's why violation has come of first and medium.
 
-“Since inorder traversal of a BST is sorted, swapping two nodes causes one or two order violations. By tracking these violations during inorder traversal, we identify the swapped nodes and fix the tree by swapping them back.”
+
