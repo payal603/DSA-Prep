@@ -8,4 +8,5 @@ take example of [4,2,0,3,1].
 4) If there is a very tall height in between, it will manage the heights of small ones.
 5) The water here is supported by both right and left max heights. This is the reason we move from both left and right.
 6) First max height of each side is confirmed and is kept updated throughout.
-7) <img width="678" height="243" alt="image" src="https://github.com/user-attachments/assets/47f475ff-ad59-49c7-bd59-27fe79c09e33" />
+   <img width="678" height="243" alt="image" src="https://github.com/user-attachments/assets/47f475ff-ad59-49c7-bd59-27fe79c09e33" />
+7) In the image above, we can see that the fist height is nothing..So maxHeight will be 0, and the stored water will be maxHeight-current height ie 0.   
