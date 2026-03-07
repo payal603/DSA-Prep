@@ -34,10 +34,4 @@ We start from both edges because the edges are the boundary walls that hold wate
 When we process the left side and do leftMax minus current height, we are not worried that rightMax could be smaller — because the way we move guarantees we only touch the left side when the right side is already taller or equal. That taller right wall is the protection. Whatever smaller bars exist in between, they will get filled naturally by the surrounding taller walls and neighboring water levels.
 
 <h3 style="color:#f39c12">How Water is Calculated</h3>
-If the current height is greater than the running maximum on that side, we update the maximum — this bar is a new wall, no water sits on top of it. If the current height is less than the running maximum, the difference is exactly the water trapped at that bar and we add it to our answer. The very first bar from either edge will always contribute zero water because the maximum starts as that bar's own height, so the difference is zero.
-
-<h3 style="color:#f39c12">Time and Space Complexity</h3>
-Time complexity is O(n) — each element is visited at most once as the two pointers move toward each other. Space complexity is O(1) — we only use four variables, leftMax, rightMax, left pointer, right pointer and the answer. Compared to the prefix suffix array approach which was O(n) space, we have eliminated that completely.
-
-<h3 style="color:#f39c12">Closing</h3>
-So the entire algorithm comes down to one insight — we never need to know both maximums at the same time. We just need to know which side is smaller, process that side confidently, and the other side takes care of itself. Two pointers from the edges give us exactly that in a single pass.
+If the current height is greater than the running maximum on that side, we update the maximum — this bar is a new wall, no water sits on top of it. If the current height is less than the running maximum, the difference is exactly the water trapped at that bar and
