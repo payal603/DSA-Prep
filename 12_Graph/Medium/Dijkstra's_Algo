@@ -1,0 +1,1 @@
+1) This algorithm uses visited array, but if you have a DAG(no cycles) ,it gices correct answers on negative weights also.
